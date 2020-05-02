@@ -12,3 +12,11 @@ class Deck:
         card_list.append(card)
     
     return card_list
+
+  def all_categories(self):
+    categories = []
+    for card in self.cards:
+      if card.category not in categories:
+        categories.append(card.category)
+    
+    return categories
